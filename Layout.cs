@@ -41,5 +41,5 @@ internal static class Layout
     public const uint ExtraIdCount = ExtraSlots * 16; // 0x60
     public const uint ExtraHandleMinimum = 0x800u + ExtraIndexBase; // 0x97B
 
-    public const ushort StageDBound = (ushort)(ExtraIndexBase + ExtraIdCount - 1u); // 0x1DA
+    public const ushort RenderDrawListBound = (ushort)(ExtraIndexBase + ExtraIdCount - 1u); // 0x1DA
 }

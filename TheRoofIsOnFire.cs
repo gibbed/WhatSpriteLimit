@@ -217,7 +217,7 @@ internal static unsafe class TheRoofIsOnFire
         Patch(A(Signature.AllocateSpriteSlotBound3) + 2u, Layout.Slots); // ''
         Patch(A(Signature.InitBattleIdLoop) + 2u, Layout.Slots); // cmp eax, 10 -> 16
         Patch(A(Signature.ClearBattleStateSlots) + 2u, BitConverter.GetBytes(Layout.Slots * Layout.SlotSize)); // memset size 0x32D60
-        Patch(A(Signature.RenderDrawListBound) + 3u, BitConverter.GetBytes(Layout.StageDBound)); // cmp r8d, 0x17A -> 0x1DA
+        Patch(A(Signature.RenderDrawListBound) + 3u, BitConverter.GetBytes(Layout.RenderDrawListBound)); // cmp r8d, 0x17A -> 0x1DA
 
         Patch(A(Signature.LoadBattleUnitsLimitMov) + 1u, EntdLimit);
         Patch(A(Signature.LoadBattleUnitsLimitCmp) + 2u, EntdLimit);
