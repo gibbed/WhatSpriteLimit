@@ -1,0 +1,41 @@
+{
+  "ModId": "WhatSpriteLimit",
+  "ModName": "What Sprite Limit?",
+  "ModAuthor": "gibbed",
+  "ModVersion": "1.0.0",
+  "ModDescription": "Increases the sprite limit in battles to 16.",
+  "ModDll": "WhatSpriteLimit.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/WhatSpriteLimit.dll",
+  "ModR2RManagedDll64": "x64/WhatSpriteLimit.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "WhatSpriteLimit.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        }
+      }
+    },
+    "GitHubRelease": {
+      "UserName": "gibbed",
+      "RepositoryName": "WhatSpriteLimit",
+      "UseReleaseTag": true,
+      "AssetFileName": "Mod.zip"
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [ "Reloaded.Memory.SigScan.ReloadedII", "reloaded.sharedlib.hooks" ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [ "fft_enhanced.exe" ],
+  "ProjectUrl": "https://github.com/gibbed/WhatSpriteLimit"
+}
